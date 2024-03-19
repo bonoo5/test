@@ -1,0 +1,220 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+body{
+    box-sizing: border-box;
+    width: 100%;
+}
+/*navbar*/
+.logo-menu{
+    width: 15%;
+    cursor: none;
+}
+.facebook-image-nav{
+    width: 80%;
+}
+.navbar-nav{
+    margin-left: 30%;
+}
+.navbar-brand{
+    margin-left: 5%;
+}
+.navbar-brand p {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 20px;
+    font-style: normal;
+}
+.navbar-toggler{
+    margin: 0 5%;
+}
+/*Home*/
+header{
+    width: 100%;
+    height: 30rem;
+    background-image: url(images/home.png);
+    color: white;
+    text-align: center;
+
+}
+.title{
+    padding: 5rem;
+}
+main{
+    width: 65%;
+    height: max-content;
+    margin: 0 auto;
+}
+/*Gallery section*/
+#gallery{
+    width: 100%;
+    text-align: center;
+}
+#gallery h3{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+#gallery h5{
+    padding-top: 3rem;
+    font-size: 16px;
+}
+.carousel-control-next, .carousel-control-prev{
+    margin-bottom: 3rem;
+}
+/*About Us section*/
+#aboutUs{
+    width: 100%;  
+    height: max-content;  
+    margin-top: 9rem;
+}
+#aboutUs h3{
+    text-align: center;   
+}
+#aboutUs iframe{
+    width: 100%;
+    height: 30rem;
+
+}
+/*Calendar section*/
+#calendar{
+    padding: 3rem 0;
+    margin-top: 5rem;
+    height: 22rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+}
+#calendar p{
+    font-size: 24px;
+    width: 70%;
+}
+/*Contact section*/
+#contact p{
+    font-size: 20px;
+}
+#contact iframe{
+    width: 100%;
+    height: 300px;
+}
+#contact ul{
+    list-style: none;
+    padding: 0;
+}
+#contact ul a{
+    text-decoration: none;
+}
+#contact h3{
+   text-align: center;
+   padding-bottom: 3rem;
+}
+#contact img{
+    width: 4%;
+    margin-right: 4px;
+}
+/*footer*/
+footer{
+    width: 100%;
+    background-color: rgba(var(--bs-primary-rgb));;
+    display: grid;
+    grid-template: 33.33% 33.33% 33.33%;
+    margin-top: 5rem;
+}
+.logo-footer{
+    width: 35%;
+    grid-row: 1;
+    grid-column: 1;
+    padding-left: 10%;
+}
+.facebook-image-footer{
+    grid-row: 1;
+    grid-column: 3;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    margin-left: 60%;
+}
+.facebook-image-footer img{
+    width: 90%;
+}
+footer p{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-self: center;
+    color: white;
+    font-size: medium;
+    margin-left: 10%;
+}
+/* devices 992px and down */
+@media only screen and (max-width: 992px) {
+    .facebook-image-nav{
+        width: 10%;
+    }
+    #calendar{
+    height: 20rem;
+    width: 100%;
+    }
+    #calendar p{
+        font-size: 15px;
+        width: 100%;
+    }
+    #calendar button{
+        width: 70%;
+    }
+    .navbar-brand p {
+        font-family: "Inknut Antiqua", serif;
+        font-size: 19px;
+        font-style: normal;
+    }
+    main{
+        width: 75%;
+    }
+    .logo-footer{
+        width: 40%;
+        padding-left: 10%;
+    }
+    .facebook-image-footer{ 
+        margin-left: 60%;
+    }
+    .facebook-image-footer img{
+        width: 80%;
+    }
+    footer p{
+        font-size: 15px;
+        margin-left: 0;
+    }
+}
+/* devices 600px and down */
+@media only screen and (max-width: 600px) {
+    .facebook-image-footer img{
+        width: 100%;
+    }
+    footer p{
+        font-size: 8px;
+    }
+    
+}
+/* devices 364px and down */
+@media only screen and (max-width: 364px) {
+    #calendar button{
+        width: 90%;
+    }
+    .facebook-image-nav{
+        width: 20%;
+    }
+    .navbar-brand p {
+        font-family: "Inknut Antiqua", serif;
+        font-size: 15px;
+        font-style: normal;
+    }
+    main{
+        width: 85%;
+    }
+    #contact ul{
+        font-size: 10px;
+    }
+}
